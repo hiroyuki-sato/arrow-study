@@ -11,7 +11,7 @@ pkg_check_modules(ARROW REQUIRED arrow)
 
 add_executable(arrow-tests
     src/main.cpp
-    src/dummy_extension.cpp
+#    src/dummy_extension.cpp
 )
 include_directories(include)
 
@@ -19,8 +19,13 @@ enable_testing()
 find_package(GTest REQUIRED)
 
 add_executable(tests 
-    tests/test_main.cpp
+    tests/test_array.cpp
+    tests/test_array_statistics.cpp
+    tests/test_binary_view.cpp
     tests/test_extension.cpp
+    tests/test_main.cpp
+    tests/test_memory_pool.cpp
+    tests/test_record_batch.cpp
 )
 target_link_libraries(tests GTest::gtest_main ${ARROW_LIBRARIES})
 target_link_libraries(arrow-tests GTest::gtest_main ${ARROW_LIBRARIES})
