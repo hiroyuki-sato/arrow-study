@@ -1,5 +1,7 @@
 /cpp/build
 /cpp/Testing
+/cpp/tests/Testing
 /ruby/vendor
+/javascript/node_modules
 
 *.swp
