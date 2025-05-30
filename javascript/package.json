@@ -17,6 +17,6 @@
     "vitest": "^3.0.4"
   },
   "dependencies": {
-    "apache-arrow": "^19.0.0"
+    "apache-arrow": "^20.0.0"
   }
 }
