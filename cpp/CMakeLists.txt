@@ -23,6 +23,7 @@ add_executable(tests
     tests/test_array_statistics.cpp
     tests/test_binary_view.cpp
     tests/test_extension.cpp
+    tests/test_fixed_shape_tensor.cpp
     tests/test_main.cpp
     tests/test_memory_pool.cpp
     tests/test_record_batch.cpp
